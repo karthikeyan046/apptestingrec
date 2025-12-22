@@ -7,7 +7,7 @@ HTML = """
 <title>Simple Bank</title>
 <h2>Simple Bank Web App</h2>
 <form method="post">
-  Name: <input name="name"><br><br>
+  Full Name: <input name="name"><br><br>
   Amount: <input name="amount" type="number"><br><br>
   <button type="submit">Deposit</button>
 </form>
