@@ -9,6 +9,7 @@ HTML = """
 <form method="post">
   Full Name: <input name="name"><br><br>
   Amount: <input name="amount" type="number"><br><br>
+  temp: <input name="temp" type="number"><br><br>
   <button type="submit">Deposit</button>
 </form>
 {% if message %}
