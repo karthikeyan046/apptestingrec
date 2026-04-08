@@ -28,6 +28,6 @@ steps:
 # Deploy to Azure Web App
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'app'
+    azureSubscription: 'azure-conn-demorec'
     appName: 'demorec'
     package: '$(Build.ArtifactStagingDirectory)/app.zip'
