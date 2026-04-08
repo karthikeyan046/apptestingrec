@@ -16,8 +16,18 @@ steps:
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
+# Create a zip package
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/app.zip'
+    replaceExistingArchive: true
+
+# Deploy to Azure Web App
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Azure subscription 1'
     appName: 'demorec'
-    package: $(System.DefaultWorkingDirectory)
+    package: '$(Build.ArtifactStagingDirectory)/app.zip'
