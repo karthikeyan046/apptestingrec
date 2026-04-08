@@ -18,6 +18,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'testappfunction'
-    appName: 'recwebapp'
+    azureSubscription: 'Azure subscription 1'
+    appName: 'demorec'
     package: $(System.DefaultWorkingDirectory)
