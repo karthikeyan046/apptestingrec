@@ -9,6 +9,8 @@ HTML = """
 <form method="post">
   Full Name: <input name="name"><br><br>
   Amount(Deposit): <input name="amount" type="number"><br><br>
+
+    Demo testing: <input name="amount" type="number"><br><br>
  
   <button type="submit">Deposit</button>
 </form>
