@@ -29,5 +29,5 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'demoforapril11'
-    appName: 'demorec'
+    appName: 'apptraing'
     package: '$(Build.ArtifactStagingDirectory)/app.zip'
